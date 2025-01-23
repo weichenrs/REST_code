@@ -1,5 +1,5 @@
 # REST
-Remote sEnsing image Segmentation Toolbox
+fiRst-ever End-to-end whole-Scene RSI semantic segmentation archiTecture (REST)
 
 ## Abstract
 As a fundamental task in remote sensing imagery (RSI) interpretation, semantic segmentation of RSI
