@@ -1,5 +1,6 @@
-# REST
-fiRst-ever End-to-end whole-Scene remote sensing imagery semantic segmentation archiTecture (REST)
+# fiRst-ever End-to-end whole-Scene remote sensing imagery semantic segmentation archiTecture (REST)
+This repository is the official implementation of the paper "A Scalable Deep Learning Framework for Holistic
+Segmentation of Whole-Scene Remote Sensing Imagery".
 
 ## Abstract
 As a fundamental task in remote sensing imagery (RSI) interpretation, semantic segmentation of RSI
