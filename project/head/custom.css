@@ -1,0 +1,15 @@
+.tabMenu          {width: 800px;}
+.tabMenu ul       {list-style: none; height: 50px;}
+.tabMenu ul li    {width: 33.08%; float: left; text-align: center; line-height: 30px; 
+                   border-right: 1px solid #C9C3C4; border-left: 1px solid #C9C3C4; background: #E9E9E6; 
+	                 filter: alpha (Opacity = 50); -moz-opacity: 0.5; opacity: 0.5;}
+.tabMenu ul li.on {border-top: 1px solid #C9C3C4; background:#FFFFFF; 
+	                 filter: alpha (Opacity = 100); -moz-opacity: 1; opacity: 1;}
+.tabMenu ul li.ho {filter: alpha (Opacity = 90); -moz-opacity: 0.9; opacity: 0.9;}
+.tabMenu div      {width: 100%; margin: 0 0;}
+.hide             {display: none;}
+
+.bar {width: 800px; text-align: center; margin-top: 30px; background: rgba(233,233,230,0.5); color: rgba(122,139,139,0.9);
+      border-right: 1px solid rgba(201,195,196,0.5); border-left: 1px solid rgba(201,195,196,0.5);}
+.dot {color: #D8BFD8;}
+.lin {color: #666666;}
