@@ -1,29 +1,8 @@
-# fiRst-ever End-to-end whole-Scene remote sensing imagery semantic segmentation archiTecture (REST)
-This repository is the official implementation of the paper "A Scalable Deep Learning Framework for Holistic
-Segmentation of Whole-Scene Remote Sensing Imagery".
+# REST: Holistic Learning for End-to-End Semantic Segmentation of Whole-Scene Remote Sensing Imagery
+This repository is the official implementation of the paper "REST: Holistic Learning for End-to-End Semantic Segmentation of Whole-Scene Remote Sensing Imagery".
 
 ## Abstract
-As a fundamental task in remote sensing imagery (RSI) interpretation, semantic segmentation of RSI
-aims to assign a category label to every pixel in the RSI. As well known, RSI is primarily characterized
-by its large-size nature. To pursue precise segmentation with one category or fine-grained categories,
-semantic segmentation of RSI is imbued with a desire for holistic segmentation of whole-scene RSI
-(WRI), which normally has a large-size characteristic. However, due to the memory constraint of the
-graphics processing unit (GPU), conventional deep learning methods, which struggle to handle seman-
-tic segmentation of WRI, are compelled to adopt suboptimal strategies such as cropping or fusion,
-resulting in performance degradation. Here, we introduce the fiRst-ever End-to-end whole-Scene RSI
-semantic segmentation archiTecture (REST), which can universally support various kinds of encoders
-and decoders in a plug-and-play manner, allowing seamless integration with mainstream deep learn-
-ing methods for semantic segmentation, including the emerging foundation models. In REST, to
-overcome the memory limitation, we propose a novel spatial parallel interaction mechanism, which
-combines the divide-and-conquer strategy with parallel computing to achieve global context percep-
-tion via information interaction across GPUs, enabling REST to segment the WRI effectively and
-efficiently. Theoretically and experimentally, REST shows sublinear throughput-scalability in han-
-dling WRI along with expansion of GPUs. Experimental results demonstrate that REST consistently
-outperforms existing cropping-based and fusion-based methods across diverse semantic segmenta-
-tion tasks ranging from single-class to multi-class segmentation, from multispectral to hyperspectral
-imagery, and from satellite to drone platform. The robustness and versatility of REST are expected to
-offer a promising solution for semantic segmentation of WRI, with the potential for further extension
-to medical image segmentation.
+Semantic segmentation of remote sensing imagery (RSI) is a fundamental task that aims at assigning a category label to each pixel. To pursue precise segmentation with one or more fine-grained categories, semantic segmentation often requires holistic segmentation of whole-scene RSI (WRI), which is normally characterized by a large size. However, conventional deep learning methods struggle to handle holistic segmentation of WRI due to the memory limitations of the graphics processing unit (GPU), thus requiring to adopt suboptimal strategies such as cropping or fusion, which result in performance degradation. Here, we introduce the Robust End-to-end semantic Segmentation architecture for whole-scene remoTe sensing imagery (REST), which can support various encoders and decoders in a plug-and-play manner. REST allows seamless integration with mainstream deep learning methods for semantic segmentation, including the emerging foundation models.  Specifically, we propose a novel spatial parallel interaction mechanism (SPIM) in REST to overcome the GPU memory limitations and achieve global perception. SPIM combines parallel computing with the divide-and-conquer strategy, enabling REST to segment a WRI accurately and efficiently. Theoretically and experimentally, REST achieves near-linear throughput-scalability in handling WRI with expansion of GPUs. Experimental results demonstrate that REST consistently outperforms existing cropping-based and fusion-based methods across diverse semantic segmentation tasks ranging from single-class to multi-class segmentation, from multispectral to hyperspectral imagery, and from satellite to drone platforms. The robustness and versatility of REST are expected to offer a promising solution for the holistic segmentation of WRI, with the potential for further extension to large-size medical imagery segmentation.
 
 ## Code
 Coming soon.
