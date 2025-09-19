@@ -1,6 +1,6 @@
 # REST: Holistic Learning for End-to-End Semantic Segmentation of Whole-Scene Remote Sensing Imagery (IEEE TPAMI 2025)
 
-[![TPAMI 2025](https://img.shields.io/badge/TPAMI-2025-blue.svg)](https://ieeexplore.ieee.org/document/XXXXX)
+[![TPAMI 2025](https://img.shields.io/badge/TPAMI-2025-blue.svg)](https://ieeexplore.ieee.org/document/11163637)
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1.1-orange.svg)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
