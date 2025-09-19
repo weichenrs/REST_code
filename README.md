@@ -74,11 +74,9 @@ Please refer to [INSTALL.md](docs/INSTALL.md) for detailed installation instruct
    │   ├── FBP_new/
    │   ├── WHU-OHS/
    │   └── UAVid/
-   ├── rest/
-   │   ├── checkpoints/
-   │   │   ├── REST_water_swin_large.pth
-   │   │   └── baseline_fbp_swin_large.pth
-   │   └── ...
+   ├── checkpoints/
+   │   ├── REST_water_swin_large.pth
+   │   └── baseline_fbp_swin_large.pth
    └── ...
    ```
 
@@ -132,20 +130,21 @@ We provide pre-trained models for different datasets and configurations:
 
 ```
 REST/
-├── configs/                 # Configuration files
-│   ├── _base_/             # Base configurations
-│   ├── rest/               # REST model configs
-│   └── baseline/           # Baseline model configs
-├── data/                   # Dataset directory
-├── docs/                   # Documentation
-├── rest/                   # Main source code
-│   ├── core/              # Core components
-│   ├── models/            # Model definitions
-│   ├── datasets/          # Dataset loaders
-│   ├── utils/             # Utility functions
-│   └── checkpoints/       # Model checkpoints
-├── tools/                  # Training and testing scripts
-└── assets/                # Images and resources
+├── assets/                 # Images and visual resources
+├── checkpoints/           # Pre-trained model weights
+├── configs/               # Configuration files
+│   ├── _base_/           # Base configurations
+│   ├── compare/          # Comparison model configs
+│   ├── convnext/         # ConvNeXt backbone configs
+│   ├── swin/             # Swin Transformer backbone configs
+│   └── vssm/             # Vision State Space Model configs
+├── data/                 # Dataset directory
+├── docs/                 # Documentation files
+├── mmcv_custom/          # Custom MMCV components
+├── mmseg/                # Core segmentation modules
+├── sh/                   # Shell scripts for execution
+├── tools/                # Training and testing utilities
+└── vmamba/               # VMamba backbone integration
 ```
 
 ## 🤝 Contributing
