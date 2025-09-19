@@ -58,7 +58,7 @@ Please refer to [INSTALL.md](docs/INSTALL.md) for detailed installation instruct
 2. Download pre-trained models:
    ```bash
    # Download all models
-   cd rest/checkpoints
+   cd REST/checkpoints
    python download_model.py
    
    # Or download individually
