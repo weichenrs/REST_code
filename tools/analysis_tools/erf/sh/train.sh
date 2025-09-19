@@ -1,0 +1,1 @@
+SRUN_ARGS="--account=liyansheng" sh sh/slurm_train.sh gpu s2hm2_ohs_ft
