@@ -41,7 +41,7 @@ REST (Robust End-to-end semantic Segmentation architecture for whole-scene remoT
 - **[In Development]** 🔧 Multi-task support beyond segmentation (detection, classification, change detection)
 - **[In Development]** ⚡ REST v2 - Enhanced training and inference efficiency with optimized algorithms
 
-## 🚀 Quick Start
+## 🚀 Quick Start **[in preparation]**
 
 ### Installation
 
@@ -102,7 +102,7 @@ python tools/train.py configs/rest/rest_water_swin_large.py
 bash tools/dist_train.sh configs/rest/rest_water_swin_large.py 4
 ```
 
-## 📁 Model Zoo
+## 📁 Model Zoo **[in preparation]**
 
 We provide pre-trained models for different datasets and configurations:
 
@@ -118,7 +118,7 @@ We provide pre-trained models for different datasets and configurations:
 | REST | UAVid | Swin-Large | TODO | TODO | TODO |
 
 
-## 📖 Documentation
+## 📖 Documentation **[in preparation]**
 
 - [Installation Guide](INSTALL.md): Detailed installation instructions
 - [Data Preparation](docs/DATA_PREPARATION.md): How to prepare your datasets
