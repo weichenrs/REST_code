@@ -7,7 +7,9 @@
 
 Official implementation of the IEEE TPAMI 2025 paper "REST: Holistic Learning for End-to-End Semantic Segmentation of Whole-Scene Remote Sensing Imagery".
 
-## 📸 Method
+## 🏠 Method Overview
+
+REST (Robust End-to-end semantic Segmentation architecture for whole-scene remoTe sensing imagery) is the **first intrinsically end-to-end framework** for truly holistic segmentation of whole-scene remote sensing imagery (WRI). Unlike conventional deep learning methods that struggle with GPU memory limitations and resort to suboptimal cropping or fusion strategies, REST enables seamless processing of large-scale remote sensing imagery without performance degradation.
 
 <div align="center">
 <img src="assets/fig1_framework.png" width="900px">
@@ -15,25 +17,16 @@ Official implementation of the IEEE TPAMI 2025 paper "REST: Holistic Learning fo
 
 *Overview of the REST framework. The Spatial Parallel Interaction Mechanism (SPIM) enables holistic processing of whole-scene remote sensing imagery through efficient parallel computation and divide-and-conquer strategy, eliminating the need for cropping or fusion while maintaining global context awareness.*
 
-## 🏠 Overview
-
-REST (Robust End-to-end semantic Segmentation architecture for whole-scene remoTe sensing imagery) is the **first intrinsically end-to-end framework** for truly holistic segmentation of whole-scene remote sensing imagery (WRI). Unlike conventional deep learning methods that struggle with GPU memory limitations and resort to suboptimal cropping or fusion strategies, REST enables seamless processing of large-scale remote sensing imagery without performance degradation.
-
-**Key innovations:**
-- **Spatial Parallel Interaction Mechanism (SPIM)**: Novel approach combining parallel computation with divide-and-conquer strategy to overcome GPU memory constraints while achieving global context awareness
-- **Plug-and-play compatibility**: Supports a wide range of encoders and decoders, enabling integration with mainstream segmentation methods and advanced foundation models
-- **True end-to-end processing**: No need for cropping or fusion - processes entire scenes holistically
-- **Near-linear scalability**: Theoretical and experimental validation of throughput scalability with additional GPUs
-
 ## 🎯 Key Features
 
 - ✅ **First end-to-end framework** for holistic whole-scene remote sensing imagery segmentation
-- ✅ **Spatial Parallel Interaction Mechanism (SPIM)** for efficient large-scale image processing
-- ✅ **Plug-and-play architecture** supporting various encoders/decoders and foundation models  
-- ✅ **GPU memory efficient** - eliminates need for cropping or fusion strategies
-- ✅ **Multi-platform support** - satellite, drone, multispectral, and hyperspectral imagery
-- ✅ **Scalable performance** - near-linear throughput scaling with additional GPUs
-- ✅ **Versatile applications** - single-class to multi-class segmentation scenarios
+- ✅ **Spatial Parallel Interaction Mechanism (SPIM)** - Novel approach combining parallel computation with divide-and-conquer strategy to overcome GPU memory constraints while achieving global context awareness
+- ✅ **Plug-and-play architecture** - Compatible with mainstream segmentation encoders/decoders and foundation models, enabling seamless integration
+- ✅ **True holistic processing** - Eliminates suboptimal cropping or fusion strategies, processing entire scenes without performance degradation
+- ✅ **Memory efficient** - Processes arbitrarily large images through innovative parallel interaction mechanisms
+- ✅ **Scalable performance** - Near-linear throughput scaling with additional GPUs (theoretical and experimentally validated)
+- ✅ **Multi-platform support** - Satellite, drone, multispectral, and hyperspectral imagery in unified framework
+- ✅ **Versatile applications** - Single-class to multi-class segmentation scenarios with consistent superior performance
 
 ## 📊 Performance
 
@@ -152,7 +145,6 @@ We provide pre-trained models for different datasets and configurations:
 - [Data Preparation](docs/DATA_PREPARATION.md): How to prepare your datasets
 - [Training Guide](docs/TRAINING.md): Comprehensive training instructions
 - [Evaluation Guide](docs/EVALUATION.md): Model evaluation and metrics
-- [API Documentation](docs/API.md): Detailed API reference
 
 ## 🛠️ Project Structure
 
@@ -173,39 +165,6 @@ REST/
 ├── tools/                  # Training and testing scripts
 └── assets/                # Images and resources
 ```
-
-## 🔬 Technical Details
-
-### Architecture
-
-REST addresses the fundamental challenge of semantic segmentation for whole-scene remote sensing imagery, which is typically characterized by large image sizes that exceed GPU memory limits. Traditional methods resort to suboptimal cropping or fusion strategies, leading to performance degradation and loss of global context.
-
-**Core Components:**
-
-1. **Spatial Parallel Interaction Mechanism (SPIM)**: 
-   - Combines parallel computation with divide-and-conquer strategy
-   - Enables processing of large WRI while maintaining global context awareness
-   - Overcomes GPU memory constraints without sacrificing performance
-
-2. **Plug-and-Play Architecture**:
-   - Compatible with mainstream semantic segmentation encoders and decoders
-   - Supports integration with advanced foundation models
-   - Flexible framework adaptable to various network architectures
-
-3. **End-to-End Processing**:
-   - First framework to achieve truly holistic segmentation without cropping
-   - Direct optimization for entire scene understanding
-   - Eliminates information loss from patch-based approaches
-
-### Key Innovations
-
-1. **Memory-Efficient Processing**: Unlike conventional methods limited by GPU memory, REST processes entire scenes through innovative parallel interaction mechanisms.
-
-2. **Scalable Architecture**: Theoretical analysis and experiments demonstrate near-linear throughput scalability as additional GPUs are employed.
-
-3. **Universal Compatibility**: Supports diverse imagery types (multispectral, hyperspectral) and platforms (satellite, drone) in a unified framework.
-
-4. **Robust Performance**: Consistently outperforms cropping-based and fusion-based methods across single-class to multi-class segmentation scenarios.
 
 ## 🤝 Contributing
 
