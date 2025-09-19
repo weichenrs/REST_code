@@ -115,8 +115,15 @@ We provide pre-trained models for different datasets and configurations:
 
 | Model | Dataset | Backbone | mIoU | Config | Download |
 |-------|---------|----------|------|--------|----------|
-| REST | GLH-Water | Swin-Large | XX.X | [config](configs/rest/rest_water_swin_large.py) | [model](https://github.com/weichenrs/REST_code/releases/download/models/REST_water_swin_large.pth) |
-| Baseline | Five-Billion-Pixels | Swin-Large | XX.X | [config](configs/baseline/baseline_fbp_swin_large.py) | [model](https://github.com/weichenrs/REST_code/releases/download/models-0.1/baseline_fbp_swin_large.pth) |
+| Baseline | GLH-Water | Swin-Large | TODO | [config](TODO) | [model](TODO) |
+| Baseline | Five-Billion-Pixels | Swin-Large | 69.68 | [config](configs\swin\fbp\swin-large-patch4-window7-skysense-pre_upernet_2xb2-80k_fbp-512x512.py) | [model](https://github.com/weichenrs/REST_code/releases/download/models-0.1/baseline_fbp_swin_large.pth) |
+| Baseline | WHU-OHS | Swin-Large | TODO | [config](TODO) | [model](TODO) |
+| Baseline | UAVid | Swin-Large | TODO | [config](TODO) | [model](TODO) |
+| REST | GLH-Water | Swin-Large | TODO | [config](TODO) | [model](https://github.com/weichenrs/REST_code/releases/download/models/REST_water_swin_large.pth) |
+| REST | Five-Billion-Pixels | Swin-Large | 72.95 | [config](TODO) | [model](TODO) |
+| REST | WHU-OHS | Swin-Large | TODO | [config](TODO) | [model](TODO) |
+| REST | UAVid | Swin-Large | TODO | [config](TODO) | [model](TODO) |
+
 
 ## 📖 Documentation
 
