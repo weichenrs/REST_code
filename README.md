@@ -52,7 +52,7 @@ Please refer to [INSTALL.md](docs/INSTALL.md) for detailed installation instruct
 1. Download the datasets:
    - [GLH-Water Dataset](https://jack-bo1220.github.io/project/GLH-water.html)
    - [Five-Billion-Pixels Dataset](https://x-ytong.github.io/project/Five-Billion-Pixels.html)
-   - [WHU-OHS Dataset](http://irsip.whu.edu.cn/resources/WHU_OHS_show.php)
+   - [WHU-OHS Dataset](https://irsip.whu.edu.cn/resv2/WHU_OHS_show.php)
    - [UAVid Dataset](https://uavid.nl/)
 
 2. Download pre-trained models:
