@@ -1,11 +1,19 @@
 # REST: Holistic Learning for End-to-End Semantic Segmentation of Whole-Scene Remote Sensing Imagery (IEEE TPAMI 2025)
 
-[![TPAMI 2025](https://img.shields.io/badge/TPAMI-2025-blue.svg)](https://ieeexplore.ieee.org/document/XXXXX)
+[![TPAMI 2025](https://img.shields.io/badge/TPAMI-2025-blue.svg)](https://ieeexplore.ieee.org/document/11163637)
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1.1-orange.svg)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Official implementation of the IEEE TPAMI 2025 paper "REST: Holistic Learning for End-to-End Semantic Segmentation of Whole-Scene Remote Sensing Imagery".
+
+## 📸 Method
+
+<div align="center">
+<img src="assets/fig1_framework.png" width="900px">
+</div>
+
+*Overview of the REST framework. The Spatial Parallel Interaction Mechanism (SPIM) enables holistic processing of whole-scene remote sensing imagery through efficient parallel computation and divide-and-conquer strategy, eliminating the need for cropping or fusion while maintaining global context awareness.*
 
 ## 🏠 Overview
 
@@ -41,16 +49,29 @@ REST (Robust End-to-end semantic Segmentation architecture for whole-scene remoT
 ### Qualitative Results
 
 <div align="center">
-<img src="assets/results_demo.png" width="800px">
+<img src="assets/fig2_vis_water.png" width="800px">
 </div>
 
 *REST enables holistic segmentation of entire remote sensing scenes without cropping, demonstrating superior performance across satellite and drone platforms with both multispectral and hyperspectral imagery.*
+
+## 📝 Updates & Milestones
+
+- **[2024.10.08]** 🎯 REST repository created and project initiated!
+- **[2025.01.25]** 🖥️ Web interface and online inference system deployed
+- **[2025.03.31]** 🏋️‍♂️ Released initial pre-trained model weights for testing (GLH-Water & Five-Billion-Pixels)
+- **[2025.04.02]** 📦 Updated sample datasets and testing data for quick start
+- **[2025.09.10]** 🎉 **REST paper officially accepted by IEEE TPAMI 2025!**
+- **[2025.09.19]** 📚 **[Current]** Major documentation update - comprehensive guides for training, evaluation, and data preparation
+- **[Coming Soon]** 🚀 Complete model zoo release with all benchmark results
+- **[Coming Soon]** 🌟 Integration with Hugging Face Model Hub for easy access
+- **[In Development]** 🔧 Multi-task support beyond segmentation (detection, classification, change detection)
+- **[In Development]** ⚡ REST v2 - Enhanced training and inference efficiency with optimized algorithms
 
 ## 🚀 Quick Start
 
 ### Installation
 
-Please refer to [INSTALL.md](INSTALL.md) for detailed installation instructions.
+Please refer to [INSTALL.md](docs/INSTALL.md) for detailed installation instructions.
 
 ### Data Preparation
 
@@ -115,8 +136,15 @@ We provide pre-trained models for different datasets and configurations:
 
 | Model | Dataset | Backbone | mIoU | Config | Download |
 |-------|---------|----------|------|--------|----------|
-| REST | GLH-Water | Swin-Large | XX.X | [config](configs/rest/rest_water_swin_large.py) | [model](https://github.com/weichenrs/REST_code/releases/download/models/REST_water_swin_large.pth) |
-| Baseline | Five-Billion-Pixels | Swin-Large | XX.X | [config](configs/baseline/baseline_fbp_swin_large.py) | [model](https://github.com/weichenrs/REST_code/releases/download/models-0.1/baseline_fbp_swin_large.pth) |
+| Baseline | GLH-Water | Swin-Large | TODO | [config](TODO) | [model](TODO) |
+| Baseline | Five-Billion-Pixels | Swin-Large | 69.68 | [config](configs\swin\fbp\swin-large-patch4-window7-skysense-pre_upernet_2xb2-80k_fbp-512x512.py) | [model](https://github.com/weichenrs/REST_code/releases/download/models-0.1/baseline_fbp_swin_large.pth) |
+| Baseline | WHU-OHS | Swin-Large | TODO | [config](TODO) | [model](TODO) |
+| Baseline | UAVid | Swin-Large | TODO | [config](TODO) | [model](TODO) |
+| REST | GLH-Water | Swin-Large | TODO | [config](TODO) | [model](https://github.com/weichenrs/REST_code/releases/download/models/REST_water_swin_large.pth) |
+| REST | Five-Billion-Pixels | Swin-Large | 72.95 | [config](TODO) | [model](TODO) |
+| REST | WHU-OHS | Swin-Large | TODO | [config](TODO) | [model](TODO) |
+| REST | UAVid | Swin-Large | TODO | [config](TODO) | [model](TODO) |
+
 
 ## 📖 Documentation
 
@@ -204,7 +232,7 @@ If you find REST useful in your research, please consider citing:
 ## 📞 Contact
 
 - **Author**: [Wei Chen](mailto:weichenrs@whu.edu.cn)
-- **Institution**: Wuhan University
+- **Institution**: [Wuhan University](https://www.whu.edu.cn/), [School of Remote Sensing and Information Engineering](https://rsgis.whu.edu.cn/)
 - **Project Page**: [https://weichenrs.github.io/REST/](https://weichenrs.github.io/REST/)
 
 ## 🙏 Acknowledgements
