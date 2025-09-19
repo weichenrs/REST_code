@@ -41,7 +41,7 @@ REST (Robust End-to-end semantic Segmentation architecture for whole-scene remoT
 - **[In Development]** 🔧 Multi-task support beyond segmentation (detection, classification, change detection)
 - **[In Development]** ⚡ REST v2 - Enhanced training and inference efficiency with optimized algorithms
 
-## 🚀 Quick Start
+## 🚀 Quick Start *[in preparation]*
 
 ### Installation
 
