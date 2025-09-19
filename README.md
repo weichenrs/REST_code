@@ -19,14 +19,14 @@ REST (Robust End-to-end semantic Segmentation architecture for whole-scene remoT
 
 ## 🎯 Key Features
 
-- ✅ **First end-to-end framework** for holistic whole-scene remote sensing imagery segmentation
-- ✅ **Spatial Parallel Interaction Mechanism (SPIM)** - Novel approach combining parallel computation with divide-and-conquer strategy to overcome GPU memory constraints while achieving global context awareness
-- ✅ **Plug-and-play architecture** - Compatible with mainstream segmentation encoders/decoders and foundation models, enabling seamless integration
-- ✅ **True holistic processing** - Eliminates suboptimal cropping or fusion strategies, processing entire scenes without performance degradation
-- ✅ **Memory efficient** - Processes arbitrarily large images through innovative parallel interaction mechanisms
-- ✅ **Scalable performance** - Near-linear throughput scaling with additional GPUs (theoretical and experimentally validated)
-- ✅ **Multi-platform support** - Satellite, drone, multispectral, and hyperspectral imagery in unified framework
-- ✅ **Versatile applications** - Single-class to multi-class segmentation scenarios with consistent superior performance
+-  **First end-to-end framework** for holistic whole-scene remote sensing imagery segmentation
+-  **Spatial Parallel Interaction Mechanism (SPIM)** - Novel approach combining parallel computation with divide-and-conquer strategy to overcome GPU memory constraints while achieving global context awareness
+-  **Plug-and-play architecture** - Compatible with mainstream segmentation encoders/decoders and foundation models, enabling seamless integration
+-  **True holistic processing** - Eliminates suboptimal cropping or fusion strategies, processing entire scenes without performance degradation
+-  **Memory efficient** - Processes arbitrarily large images through innovative parallel interaction mechanisms
+-  **Scalable performance** - Near-linear throughput scaling with additional GPUs (theoretical and experimentally validated)
+-  **Multi-platform support** - Satellite, drone, multispectral, and hyperspectral imagery in unified framework
+-  **Versatile applications** - Single-class to multi-class segmentation scenarios with consistent superior performance
 
 ## 📝 Updates & Milestones
 
@@ -171,7 +171,8 @@ If you find REST useful in your research, please consider citing:
 
 ## 📞 Contact
 
-- **Author**: [Wei Chen](mailto:weichenrs@whu.edu.cn)
+- **Core Author**: [Wei Chen](mailto:weichenrs@whu.edu.cn),
+- **Corresponding Author**: [Yansheng Li](mailto:yansheng.li@whu.edu.cn),
 - **Institution**: [Wuhan University](https://www.whu.edu.cn/), [School of Remote Sensing and Information Engineering](https://rsgis.whu.edu.cn/)
 - **Project Page**: [https://weichenrs.github.io/REST/](https://weichenrs.github.io/REST/)
 
@@ -186,7 +187,9 @@ We thank the remote sensing community for providing high-quality datasets and th
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+
+**⚠️ Important**: The source code is only available for **non-commercial research**. For commercial use, please contact Yansheng Li at Wuhan University (yansheng.li@whu.edu.cn).
 
 ---
 
