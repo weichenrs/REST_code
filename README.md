@@ -28,25 +28,6 @@ REST (Robust End-to-end semantic Segmentation architecture for whole-scene remoT
 - ✅ **Multi-platform support** - Satellite, drone, multispectral, and hyperspectral imagery in unified framework
 - ✅ **Versatile applications** - Single-class to multi-class segmentation scenarios with consistent superior performance
 
-## 📊 Performance
-
-### Quantitative Results
-
-| Dataset | Method | mIoU | F1-Score | OA |
-|---------|--------|------|----------|-----|
-| GLH-Water | REST | **89.15（IoU）** | **94.26** | **-** |
-| Five-Billion-Pixels | REST | **72.95** | **-** | **92.78** |
-| WHU-OHS | REST | **22.81** | **-** | **49.26** |
-| UAVid | REST | **73.16** | **-** | **82.30** |
-
-### Qualitative Results
-
-<div align="center">
-<img src="assets/fig2_vis_water.png" width="800px">
-</div>
-
-*REST enables holistic segmentation of entire remote sensing scenes without cropping, demonstrating superior performance across satellite and drone platforms with both multispectral and hyperspectral imagery.*
-
 ## 📝 Updates & Milestones
 
 - **[2024.10.08]** 🎯 REST repository created and project initiated!
@@ -145,6 +126,7 @@ We provide pre-trained models for different datasets and configurations:
 - [Data Preparation](docs/DATA_PREPARATION.md): How to prepare your datasets
 - [Training Guide](docs/TRAINING.md): Comprehensive training instructions
 - [Evaluation Guide](docs/EVALUATION.md): Model evaluation and metrics
+
 
 ## 🛠️ Project Structure
 
