@@ -30,16 +30,16 @@ REST (Robust End-to-end semantic Segmentation architecture for whole-scene remoT
 
 ## 📝 Updates & Milestones
 
-- **[2024.10.08]** 🎯 REST repository created and project initiated!
-- **[2025.01.25]** 🖥️ Web interface and online inference system deployed
-- **[2025.03.31]** 🏋️‍♂️ Released initial pre-trained model weights for testing (GLH-Water & Five-Billion-Pixels)
-- **[2025.04.02]** 📦 Updated sample datasets and testing data for quick start
-- **[2025.09.10]** 🎉 **REST paper officially accepted by IEEE TPAMI 2025!**
-- **[2025.09.19]** 📚 **[Current]** Major documentation update - comprehensive guides for training, evaluation, and data preparation
-- **[Coming Soon]** 🚀 Complete model zoo release with all benchmark results
-- **[Coming Soon]** 🌟 Integration with Hugging Face Model Hub for easy access
-- **[In Development]** 🔧 Multi-task support beyond segmentation (detection, classification, change detection)
-- **[In Development]** ⚡ REST v2 - Enhanced training and inference efficiency with optimized algorithms
+- ✅ **[2024.10.08]** 🎯 REST repository created and project initiated!
+- ✅ **[2025.01.25]** 🖥️ Web interface and online inference system deployed
+- ✅ **[2025.03.31]** 🏋️‍♂️ Released initial pre-trained model weights for testing (GLH-Water & Five-Billion-Pixels)
+- ✅ **[2025.04.02]** 📦 Updated sample datasets and testing data for quick start
+- ✅ **[2025.09.10]** 🎉 **REST paper officially accepted by IEEE TPAMI 2025!**
+- 🔄 **[2025.09.19]** 📚 **[Current]** Major documentation update - comprehensive guides for training, evaluation, and data preparation
+- 🔄 **[Coming Soon]** 🚀 Complete model zoo release with all benchmark results
+- 🔄 **[Coming Soon]** 🌟 Integration with Hugging Face Model Hub for easy access
+- ⏳ **[In Development]** 🔧 Multi-task support beyond segmentation (detection, classification, change detection)
+- ⏳ **[In Development]** ⚡ REST v2 - Enhanced training and inference efficiency with optimized algorithms
 
 ## 🚀 Quick Start **[in preparation]**
 
