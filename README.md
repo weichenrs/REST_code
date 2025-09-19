@@ -232,7 +232,7 @@ If you find REST useful in your research, please consider citing:
 ## 📞 Contact
 
 - **Author**: [Wei Chen](mailto:weichenrs@whu.edu.cn)
-- **Institution**: Wuhan University
+- **Institution**: [Wuhan University](https://www.whu.edu.cn/), [School of Remote Sensing and Information Engineering](https://rsgis.whu.edu.cn/)
 - **Project Page**: [https://weichenrs.github.io/REST/](https://weichenrs.github.io/REST/)
 
 ## 🙏 Acknowledgements
