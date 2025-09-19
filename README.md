@@ -102,7 +102,7 @@ python tools/train.py configs/rest/rest_water_swin_large.py
 bash tools/dist_train.sh configs/rest/rest_water_swin_large.py 4
 ```
 
-## 📁 Model Zoo
+## 📁 Model Zoo **[in preparation]**
 
 We provide pre-trained models for different datasets and configurations:
 
