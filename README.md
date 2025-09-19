@@ -7,6 +7,14 @@
 
 Official implementation of the IEEE TPAMI 2025 paper "REST: Holistic Learning for End-to-End Semantic Segmentation of Whole-Scene Remote Sensing Imagery".
 
+## 📸 Method
+
+<div align="center">
+<img src="assets/fig1_framework.png" width="900px">
+</div>
+
+*Overview of the REST framework. The Spatial Parallel Interaction Mechanism (SPIM) enables holistic processing of whole-scene remote sensing imagery through efficient parallel computation and divide-and-conquer strategy, eliminating the need for cropping or fusion while maintaining global context awareness.*
+
 ## 🏠 Overview
 
 REST (Robust End-to-end semantic Segmentation architecture for whole-scene remoTe sensing imagery) is the **first intrinsically end-to-end framework** for truly holistic segmentation of whole-scene remote sensing imagery (WRI). Unlike conventional deep learning methods that struggle with GPU memory limitations and resort to suboptimal cropping or fusion strategies, REST enables seamless processing of large-scale remote sensing imagery without performance degradation.
@@ -41,16 +49,29 @@ REST (Robust End-to-end semantic Segmentation architecture for whole-scene remoT
 ### Qualitative Results
 
 <div align="center">
-<img src="assets/results_demo.png" width="800px">
+<img src="assets/fig2_vis_water.png" width="800px">
 </div>
 
 *REST enables holistic segmentation of entire remote sensing scenes without cropping, demonstrating superior performance across satellite and drone platforms with both multispectral and hyperspectral imagery.*
+
+## 📝 Updates & Milestones
+
+- **[2024.10.08]** 🎯 REST repository created and project initiated!
+- **[2025.01.25]** 🖥️ Web interface and online inference system deployed
+- **[2025.03.31]** 🏋️‍♂️ Released initial pre-trained model weights for testing (GLH-Water & Five-Billion-Pixels)
+- **[2025.04.02]** 📦 Updated sample datasets and testing data for quick start
+- **[2025.09.10]** 🎉 **REST paper officially accepted by IEEE TPAMI 2025!**
+- **[2025.09.19]** 📚 **[Current]** Major documentation update - comprehensive guides for training, evaluation, and data preparation
+- **[Coming Soon]** 🚀 Complete model zoo release with all benchmark results
+- **[Coming Soon]** 🌟 Integration with Hugging Face Model Hub for easy access
+- **[In Development]** 🔧 Multi-task support beyond segmentation (detection, classification, change detection)
+- **[In Development]** ⚡ REST v2 - Enhanced training and inference efficiency with optimized algorithms
 
 ## 🚀 Quick Start
 
 ### Installation
 
-Please refer to [INSTALL.md](INSTALL.md) for detailed installation instructions.
+Please refer to [INSTALL.md](docs/INSTALL.md) for detailed installation instructions.
 
 ### Data Preparation
 
