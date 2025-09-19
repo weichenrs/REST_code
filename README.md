@@ -80,26 +80,26 @@ Please refer to [INSTALL.md](docs/INSTALL.md) for detailed installation instruct
    └── ...
    ```
 
-### Inference
+### Inference (refer to sh/test.sh)
 
 Run inference on sample images:
 ```bash
-# Test on GLH-Water dataset
-bash test.sh configs/rest/rest_water_swin_large.py checkpoints/REST_water_swin_large.pth
+# Test on GLH-Water dataset (REST, multiple GPUs needed)
+tools/dist_test.sh configs/swin/water/swin-large-patch4-window7-skysense-pre_upernet_2xb2-80k_water-sp_test_12800.py checkpoints/REST_water_swin_large.pth 8 --out show_dirs/test_REST_8gpu_ws --work-dir show_dirs/test_REST_8gpu_ws
 
-# Test on Five-Billion-Pixels dataset
-bash test.sh configs/baseline/baseline_fbp_swin_large.py checkpoints/baseline_fbp_swin_large.pth
+# Test on Five-Billion-Pixels dataset (baseline)
+tools/dist_test.sh configs/swin/fbp/swin-large-patch4-window7-skysense-pre_upernet_2xb2-80k_fbp-512x512_test.py checkpoints/baseline_fbp_swin_large.pth 1 --out show_dirs/test_baseline --work-dir show_dirs/test_baseline 
 ```
 
-### Training
+### Training (refer to sh/train.sh)
 
 Train your own REST model:
 ```bash
 # Single GPU training
-python tools/train.py configs/rest/rest_water_swin_large.py
+python tools/train.py configs/swin/fbp/swin-large-patch4-window7-skysense-pre_upernet_2xb2-80k_fbp-512x512.py
 
 # Multi-GPU training
-bash tools/dist_train.sh configs/rest/rest_water_swin_large.py 4
+bash tools/dist_train.sh configs/swin/fbp/swin-large-patch4-window7-skysense-pre_upernet_2xb2-80k_fbp-2048x2048_sp.py 4
 ```
 
 ## 📁 Model Zoo **[in preparation]**
@@ -171,8 +171,8 @@ If you find REST useful in your research, please consider citing:
 
 ## 📞 Contact
 
-- **Core Author**: [Wei Chen](mailto:weichenrs@whu.edu.cn),
-- **Corresponding Author**: [Yansheng Li](mailto:yansheng.li@whu.edu.cn),
+- **Core Author**: [Wei Chen](mailto:weichenrs@whu.edu.cn)
+- **Corresponding Author**: [Yansheng Li](mailto:yansheng.li@whu.edu.cn)
 - **Institution**: [Wuhan University](https://www.whu.edu.cn/), [School of Remote Sensing and Information Engineering](https://rsgis.whu.edu.cn/)
 - **Project Page**: [https://weichenrs.github.io/REST/](https://weichenrs.github.io/REST/)
 
