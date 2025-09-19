@@ -187,12 +187,18 @@ We thank the remote sensing community for providing high-quality datasets and th
 
 ## 📜 License
 
-Copyright (c) [2025] [Wei Chen]
-
-**⚠️ Important**: The source code is only available for **non-commercial research**. For commercial use, please contact Yansheng Li at Wuhan University (yansheng.li@whu.edu.cn).
+Copyright (c) 2025 Wei Chen
 
 This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. 
 To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/
+
+Under the following terms:
+* Attribution — You must give appropriate credit, provide a link to the license, 
+  and indicate if changes were made.
+* NonCommercial — You may not use the material for commercial purposes.
+
+**⚠️ Important**: The source code is only available for **non-commercial research**. 
+For commercial use, please contact Yansheng Li at Wuhan University (yansheng.li@whu.edu.cn).
 
 ---
 
