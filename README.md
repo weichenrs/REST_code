@@ -35,7 +35,7 @@ REST (Robust End-to-end semantic Segmentation architecture for whole-scene remoT
 - ✅ **[2025.03.31]** 🏋️‍♂️ Released initial pre-trained model weights for testing (GLH-Water & Five-Billion-Pixels)
 - ✅ **[2025.04.02]** 📦 Updated sample datasets and testing data for quick start
 - ✅ **[2025.09.10]** 🎉 **REST paper officially accepted by IEEE TPAMI 2025!**
-- 🔄 **[2025.09.19]** 📚 **[Current]** Major documentation update - comprehensive guides for training, evaluation, and data preparation
+- ✅ **[2026.03.17]** 📚 **[Current]** Major documentation update - comprehensive guides for training, evaluation, and data preparation
 - 🔄 **[Coming Soon]** 🚀 Complete model zoo release with all benchmark results
 - 🔄 **[Coming Soon]** 🌟 Integration with Hugging Face Model Hub for easy access
 - ⏳ **[In Development]** 🔧 Multi-task support beyond segmentation (detection, classification, change detection)
