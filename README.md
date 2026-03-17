@@ -1,9 +1,9 @@
 # REST: Holistic Learning for End-to-End Semantic Segmentation of Whole-Scene Remote Sensing Imagery (IEEE TPAMI 2025)
 
-[![TPAMI 2025](https://img.shields.io/badge/TPAMI-2025-blue.svg)](https://ieeexplore.ieee.org/document/11163637)
+[![TPAMI 2025](https://img.shields.io/badge/TPAMI-2025-red.svg)](https://ieeexplore.ieee.org/document/11163637)
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1.1-orange.svg)](https://pytorch.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 Official implementation of the IEEE TPAMI 2025 paper "REST: Holistic Learning for End-to-End Semantic Segmentation of Whole-Scene Remote Sensing Imagery".
 
@@ -58,7 +58,7 @@ Please refer to [INSTALL.md](docs/INSTALL.md) for detailed installation instruct
 2. Download pre-trained models:
    ```bash
    # Download all models
-   cd rest/checkpoints
+   cd REST/checkpoints
    python download_model.py
    
    # Or download individually
@@ -80,26 +80,26 @@ Please refer to [INSTALL.md](docs/INSTALL.md) for detailed installation instruct
    └── ...
    ```
 
-### Inference
+### Inference (refer to sh/test.sh)
 
 Run inference on sample images:
 ```bash
-# Test on GLH-Water dataset
-bash test.sh configs/rest/rest_water_swin_large.py checkpoints/REST_water_swin_large.pth
+# Test on GLH-Water dataset (REST, multiple GPUs needed)
+tools/dist_test.sh configs/swin/water/swin-large-patch4-window7-skysense-pre_upernet_2xb2-80k_water-sp_test_12800.py checkpoints/REST_water_swin_large.pth 8 --out show_dirs/test_REST_8gpu_ws --work-dir show_dirs/test_REST_8gpu_ws
 
-# Test on Five-Billion-Pixels dataset
-bash test.sh configs/baseline/baseline_fbp_swin_large.py checkpoints/baseline_fbp_swin_large.pth
+# Test on Five-Billion-Pixels dataset (baseline)
+tools/dist_test.sh configs/swin/fbp/swin-large-patch4-window7-skysense-pre_upernet_2xb2-80k_fbp-512x512_test.py checkpoints/baseline_fbp_swin_large.pth 1 --out show_dirs/test_baseline --work-dir show_dirs/test_baseline 
 ```
 
-### Training
+### Training (refer to sh/train.sh)
 
 Train your own REST model:
 ```bash
 # Single GPU training
-python tools/train.py configs/rest/rest_water_swin_large.py
+python tools/train.py configs/swin/fbp/swin-large-patch4-window7-skysense-pre_upernet_2xb2-80k_fbp-512x512.py
 
 # Multi-GPU training
-bash tools/dist_train.sh configs/rest/rest_water_swin_large.py 4
+bash tools/dist_train.sh configs/swin/fbp/swin-large-patch4-window7-skysense-pre_upernet_2xb2-80k_fbp-2048x2048_sp.py 4
 ```
 
 ## 📁 Model Zoo **[in preparation]**
@@ -171,8 +171,8 @@ If you find REST useful in your research, please consider citing:
 
 ## 📞 Contact
 
-- **Core Author**: [Wei Chen](mailto:weichenrs@whu.edu.cn),
-- **Corresponding Author**: [Yansheng Li](mailto:yansheng.li@whu.edu.cn),
+- **Core Author**: [Wei Chen](mailto:weichenrs@whu.edu.cn)
+- **Corresponding Author**: [Yansheng Li](mailto:yansheng.li@whu.edu.cn)
 - **Institution**: [Wuhan University](https://www.whu.edu.cn/), [School of Remote Sensing and Information Engineering](https://rsgis.whu.edu.cn/)
 - **Project Page**: [https://weichenrs.github.io/REST/](https://weichenrs.github.io/REST/)
 
@@ -187,9 +187,18 @@ We thank the remote sensing community for providing high-quality datasets and th
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+Copyright (c) 2025 Wei Chen
 
-**⚠️ Important**: The source code is only available for **non-commercial research**. For commercial use, please contact Yansheng Li at Wuhan University (yansheng.li@whu.edu.cn).
+This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. 
+To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/
+
+Under the following terms:
+* Attribution — You must give appropriate credit, provide a link to the license, 
+  and indicate if changes were made.
+* NonCommercial — You may not use the material for commercial purposes.
+
+**⚠️ Important**: The source code is only available for **non-commercial research**. 
+For commercial use, please contact Yansheng Li at Wuhan University (yansheng.li@whu.edu.cn).
 
 ---
 
