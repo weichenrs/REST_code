@@ -1,7 +1,5 @@
 # Installation Guide
 
-> Reference repository: [https://github.com/weichenrs/REST_code](https://github.com/weichenrs/REST_code)
-
 ---
 
 ## Prerequisites
