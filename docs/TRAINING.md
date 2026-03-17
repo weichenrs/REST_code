@@ -1,7 +1,5 @@
 # Training Guide
 
-> Reference repository: [https://github.com/weichenrs/REST_code](https://github.com/weichenrs/REST_code)
-
 ---
 
 ## Step 1 — Prepare Pretrained Backbone Weights

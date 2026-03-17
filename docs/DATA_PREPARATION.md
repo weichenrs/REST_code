@@ -1,7 +1,5 @@
 # Data Preparation
 
-> Reference repository: [https://github.com/weichenrs/REST_code](https://github.com/weichenrs/REST_code)
-
 ---
 
 ## Option A — Quick-Start: Download Packaged Data
