@@ -120,7 +120,7 @@ We provide pre-trained models for different datasets and configurations:
 
 ## 📖 Documentation **[in preparation]**
 
-- [Installation Guide](INSTALL.md): Detailed installation instructions
+- [Installation Guide](docs/INSTALL.md): Detailed installation instructions
 - [Data Preparation](docs/DATA_PREPARATION.md): How to prepare your datasets
 - [Training Guide](docs/TRAINING.md): Comprehensive training instructions
 - [Evaluation Guide](docs/EVALUATION.md): Model evaluation and metrics
