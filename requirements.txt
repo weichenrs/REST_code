@@ -1,0 +1,16 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+--find-links https://download.openmmlab.com/mmcv/dist/cu121/torch2.1/index.html
+
+torch==2.1.1
+torchvision==0.16.1
+torchaudio==2.1.1
+mmcv==2.1.0
+openmim
+ftfy
+regex
+timm
+einops
+prettytable
+fvcore
+opencv-python-headless==4.9.0.80
+numpy==1.23.0
