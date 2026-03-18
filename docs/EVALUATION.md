@@ -1,6 +1,6 @@
 # Evaluation Guide
 
-\---
+---
 
 ## Step 1 — Download Pretrained Model Checkpoints
 
@@ -86,5 +86,4 @@ Results are printed to the terminal and saved in the working directory upon comp
 ## References
 
 * MMSegmentation documentation: https://mmsegmentation.readthedocs.io/en/latest/
-* REST_code model releases: https://github.com/weichenrs/REST_code/releases
 
