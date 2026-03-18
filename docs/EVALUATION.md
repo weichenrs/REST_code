@@ -9,17 +9,17 @@ Three methods are available:
 ### Method A — Python Script (Recommended)
 
 ```bash
-python checkpoints/download\_model.py
+python checkpoints/download_model.py
 ```
 
 ### Method B — wget
 
 ```bash
-wget https://github.com/weichenrs/REST\_code/releases/download/models/REST\_water\_swin\_large.pth \\
-     -O checkpoints/REST\_water\_swin\_large.pth
+wget https://github.com/weichenrs/REST_code/releases/download/models/REST_water_swin_large.pth \\
+     -O checkpoints/REST_water_swin_large.pth
 
-wget https://github.com/weichenrs/REST\_code/releases/download/models-0.1/baseline\_fbp\_swin\_large.pth \\
-     -O checkpoints/baseline\_fbp\_swin\_large.pth
+wget https://github.com/weichenrs/REST_code/releases/download/models-0.1/baseline_fbp_swin_large.pth \\
+     -O checkpoints/baseline_fbp_swin_large.pth
 ```
 
 ### Method C — Direct Browser Download
@@ -32,8 +32,8 @@ Visit the URLs above and save the `.pth` files to the `checkpoints/` directory m
 
 |Model|Dataset|Filename|
 |-|-|-|
-|REST (Swin-Large)|GLH-Water|`REST\_water\_swin\_large.pth`|
-|Baseline (Swin-Large)|Five-Billion-Pixels|`baseline\_fbp\_swin\_large.pth`|
+|REST (Swin-Large)|GLH-Water|`REST_water_swin_large.pth`|
+|Baseline (Swin-Large)|Five-Billion-Pixels|`baseline_fbp_swin_large.pth`|
 
 \---
 
@@ -55,16 +55,16 @@ Open `test.sh` and verify the following fields:
 
 ```bash
 python tools/test.py configs/xxmodel/yy.py \\
-    checkpoints/REST\_water\_swin\_large.pth \\
-    --show-dir /path/to/vis\_output
+    checkpoints/REST_water_swin_large.pth \\
+    --show-dir /path/to/vis_output
 ```
 
 ### Multi-GPU Distributed Evaluation
 
 ```bash
-bash tools/dist\_test.sh configs/xxmodel/yy.py \\
-    checkpoints/REST\_water\_swin\_large.pth \\
-    <NUM\_GPUS>
+bash tools/dist_test.sh configs/xxmodel/yy.py \\
+    checkpoints/REST_water_swin_large.pth \\
+    <NUM_GPUS>
 ```
 
 \---
@@ -86,5 +86,5 @@ Results are printed to the terminal and saved in the working directory upon comp
 ## References
 
 * MMSegmentation documentation: https://mmsegmentation.readthedocs.io/en/latest/
-* REST\_code model releases: https://github.com/weichenrs/REST\_code/releases
+* REST_code model releases: https://github.com/weichenrs/REST_code/releases
 
